@@ -39,7 +39,7 @@ public class FirstTest {
     }
 
     @Test
-    public void testCompareArticleTitle() {
+    public void testEx2() {
         assertElementHasText(
                 By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
                 "Search Wikipedia",
@@ -50,9 +50,7 @@ public class FirstTest {
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(error_message + "\n");
-        return wait.until(
-                ExpectedConditions.presenceOfElementLocated(by)
-        );
+        return wait.until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
     private void assertElementHasText(By by, String expected_title, String error_message) {
