@@ -96,7 +96,6 @@ public class SecondTest {
         return element;
     }
 
-
     private boolean waitForElementNotPresent(By by, String error_message, long timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(error_message + "\n");
