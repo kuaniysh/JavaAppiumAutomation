@@ -1,4 +1,4 @@
-package unit2;
+package unit2.ex1;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
